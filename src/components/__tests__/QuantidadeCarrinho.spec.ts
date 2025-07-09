@@ -18,7 +18,7 @@ describe('QuantidadeCarrinho', () => {
     const quantidade = input.element.value
     expect(quantidade).toBe('28')
   })
-  test('dimunui a quantidade em um ao clicar no btn -', async () => {
+  test('dimunui a quantidade em um ao clicar no btn -, com valor diferente de 0', async () => {
     const wrapper = mount(QuantidadeCarrinho)
     const input = wrapper.find('input')
     input.setValue('26')
